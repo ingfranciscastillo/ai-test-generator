@@ -41,7 +41,7 @@ const DashboardClient = ({
                 AI Test Generator
               </h1>
             </div>
-            <UserNav user={user} subscription={subscription} />
+            <UserNav subscription={subscription} />
           </div>
         </div>
       </header>

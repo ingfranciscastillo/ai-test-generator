@@ -7,7 +7,6 @@ import { Crown } from "lucide-react";
 import { PricingModal } from "./PricingModal";
 
 interface UserNavProps {
-  user: any;
   subscription: {
     isPremium: boolean;
     generationsUsed: number;
@@ -15,7 +14,7 @@ interface UserNavProps {
   };
 }
 
-export function UserNav({ user, subscription }: UserNavProps) {
+export function UserNav({ subscription }: UserNavProps) {
   return (
     <div className="flex items-center gap-4">
       <div className="flex items-center gap-2">

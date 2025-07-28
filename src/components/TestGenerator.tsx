@@ -104,6 +104,7 @@ export function TestGenerator({ userId, subscription }: TestGeneratorProps) {
   };
 
   const downloadTest = () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const selectedLang = SUPPORTED_LANGUAGES.find((l) => l.value === language);
     const extension =
       language === "javascript" || language === "typescript"
