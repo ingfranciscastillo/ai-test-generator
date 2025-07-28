@@ -5,7 +5,7 @@ import { Anthropic } from "@anthropic-ai/sdk";
 import {
   checkUserSubscription,
   incrementUserGenerations,
-} from "@/lib/suscription";
+} from "@/lib/subscription";
 import { logTestGeneration } from "@/lib/usage-logs";
 
 const anthropic = new Anthropic({

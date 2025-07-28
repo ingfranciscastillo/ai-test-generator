@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
-import DashboardClient from "./_components/dashboard-client";
+import DashboardClient from "../../components/dashboard-client";
 import { auth } from "@clerk/nextjs/server";
-import { checkUserSubscription } from "@/lib/suscription";
+import { checkUserSubscription } from "@/lib/subscription";
 
 export default async function Dashboard() {
   const { userId } = await auth();

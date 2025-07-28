@@ -4,8 +4,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { useUser } from "@clerk/nextjs";
 import { Code } from "lucide-react";
 import React from "react";
-import { UserNav } from "./userNav";
-import { TestGenerator } from "./TestGenerator";
+import { UserNav } from "@/components/userNav";
+import { TestGenerator } from "@/components/TestGenerator";
 
 const DashboardClient = ({
   subscription,

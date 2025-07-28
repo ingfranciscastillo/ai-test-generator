@@ -20,8 +20,9 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Loader2, Copy, Download, Zap, Lock } from "lucide-react";
-import { generateTest } from "../_actions/generate_test";
+import { generateTest } from "@/actions/generate_test";
 import { toast } from "sonner";
+import { PricingModal } from "./PricingModal";
 
 interface TestGeneratorProps {
   userId: string;
@@ -149,9 +150,11 @@ export function TestGenerator({ userId, subscription }: TestGeneratorProps) {
               </p>
             </div>
             {!subscription.isPremium && (
-              <Button variant="outline" size="sm">
-                Actualizar a Premium
-              </Button>
+              <PricingModal>
+                <Button variant="outline" size="sm">
+                  Actualizar a Premium
+                </Button>
+              </PricingModal>
             )}
           </div>
         </CardContent>
@@ -216,10 +219,16 @@ function sum(a, b) {
             {!canGenerate && (
               <Alert>
                 <Lock className="h-4 w-4" />
-                <AlertDescription>
-                  Has alcanzado el límite de {subscription.maxGenerations}{" "}
-                  generaciones para el plan básico. Actualiza a Premium para
-                  obtener generaciones ilimitadas.
+                <AlertDescription className="flex items-center justify-between">
+                  <span>
+                    Has alcanzado el límite de {subscription.maxGenerations}{" "}
+                    generaciones para el plan básico.
+                  </span>
+                  <PricingModal>
+                    <Button variant="outline" size="sm" className="ml-2">
+                      Actualizar
+                    </Button>
+                  </PricingModal>
                 </AlertDescription>
               </Alert>
             )}
