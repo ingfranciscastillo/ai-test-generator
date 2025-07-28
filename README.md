@@ -1,3 +1,14 @@
+![Screenshot de la aplicación](captura1.png)
+![Screenshot de la aplicación](captura2.png)
+
+![Claude AI](https://img.shields.io/badge/Claude%20AI-powered-%235A51FF?style=for-the-badge&logo=anthropic&logoColor=white)
+
+![Clerk](https://img.shields.io/badge/Clerk-Authentication-%23fff?style=for-the-badge&logo=clerk&logoColor=black)
+
+![Next.js](https://img.shields.io/badge/Next.js-%23000000?style=for-the-badge&logo=next.js&logoColor=white)
+
+![Stripe](https://img.shields.io/badge/Stripe-Payments-%237A00E6?style=for-the-badge&logo=stripe&logoColor=white)
+
 # AI Test Generator
 
 Una aplicación web construida con Next.js que permite a usuarios autenticados generar tests automáticamente para su código usando inteligencia artificial (Claude API).
@@ -268,3 +279,6 @@ Para reportar bugs o solicitar características:
 ## 📄 Licencia
 
 MIT License - ver archivo LICENSE para detalles.
+
+![Screenshot de la aplicación](bmc_qr.png)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://coff.ee/franciscas7)
