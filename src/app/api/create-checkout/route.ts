@@ -7,7 +7,7 @@ import {
 } from "@/lib/subscription";
 
 // Price ID del plan Premium en Stripe (debes configurar esto en tu dashboard de Stripe)
-const PREMIUM_PRICE_ID = "price_1234567890"; // Reemplazar con tu Price ID real
+const PREMIUM_PRICE_ID = ""; // Reemplazar con tu Price ID real
 
 export async function POST(req: NextRequest) {
   try {

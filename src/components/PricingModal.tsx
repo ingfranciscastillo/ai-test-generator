@@ -25,7 +25,7 @@ interface PricingModalProps {
   children: React.ReactNode;
 }
 
-const PREMIUM_PRICE_ID = "price_1234567890"; // Mismo ID que en la API
+const PREMIUM_PRICE_ID = ""; // Mismo ID que en la API
 
 export function PricingModal({ children }: PricingModalProps) {
   const [isLoading, setIsLoading] = useState(false);

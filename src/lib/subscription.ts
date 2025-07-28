@@ -91,6 +91,13 @@ export async function createCheckoutSession(userId: string, priceId: string) {
   try {
     const customerId = userSubscriptions[userId]?.stripeCustomerId;
 
+    console.log(
+      "Creating checkout session for user:",
+      userId,
+      "Customer ID:",
+      customerId
+    );
+
     if (!customerId) {
       throw new Error("Customer not found");
     }
