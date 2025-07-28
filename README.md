@@ -35,7 +35,7 @@ Una aplicación web construida con Next.js que permite a usuarios autenticados g
 1. **Clonar el repositorio**
 
 ```bash
-git clone <tu-repo>
+git clone https://github.com/ingfranciscastillo/ai-test-generator
 cd ai-test-generator
 ```
 
